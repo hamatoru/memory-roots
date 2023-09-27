@@ -1,24 +1,56 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| nickname           | string | null: false               |
+| email              | string | null: false, unique: true |
+| encrypted_password | string | null: false               |
+| profile            | string | null: false               |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :Events
+- has_many :photos
 
-* Configuration
 
-* Database creation
+## Events テーブル
 
-* Database initialization
+| Column                | Type       | Options                        |
+| ------------------    | ---------- | ------------------------------ |
+| title                 | string     | null: false                    |
+| user                  | references | null: false, foreign_key: true |
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- belongs_to :user
+- has_one   :photo
 
-* Deployment instructions
 
-* ...
+## Photos テーブル
+
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| user             | references | null: false, foreign_key: true |
+| event            | references | null: false, foreign_key: true |
+
+
+### Association
+
+- has_one :favorite
+- belongs_to :user
+- belongs_to :event
+
+
+## Favorites テーブル
+
+| Column           | Type          | Options                         |
+| ---------------- | ------------- | ------------------------------- |
+| favorite         | string        | null: false                     |
+| comment          | string        | null: false                     |
+
+
+### Association
+
+- belongs_to :photo
