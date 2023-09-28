@@ -1,0 +1,15 @@
+.side {
+  float: right;
+  width: 20%;
+  background-color: orange;
+  padding: 20px;
+  height: 100vh;
+}
+
+.main-side {
+}
+
+.lists-side {
+  background-color: white;
+  list-style: none;
+}

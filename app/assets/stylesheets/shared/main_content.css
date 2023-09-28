@@ -1,0 +1,7 @@
+.main {
+  float: left;
+  width: 70%; /* メイン画面の幅を調整 */
+  padding: 20px;
+  background-color: #fff;
+  height: 100vh;
+}
