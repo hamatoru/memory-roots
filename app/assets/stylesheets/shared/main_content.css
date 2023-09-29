@@ -2,6 +2,8 @@
   float: left;
   width: 80%; /* メイン画面の幅を調整 */
   padding: 20px;
-  background-color: rgb(141, 137, 119);
+  background-color: #f0f8ff;
   height: 100vh;
+  overflow: scroll;
 }
+

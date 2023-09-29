@@ -1,7 +1,7 @@
 .side {
   float: right;
   width: 20%;
-  background-color: rgb(255, 251, 0);
+  background-color:#ffffa8;
   padding: 20px;
   height: 100vh;
 }
@@ -9,7 +9,3 @@
 .main-side {
 }
 
-.lists-side {
-  background-color: white;
-  list-style: none;
-}

@@ -1,17 +1,16 @@
 .header {
-  background-color: burlywood;
+  background-color: #7fff7f;
   padding: 10px;
   height: 80px;
  
 }
 
+.header-title {
+  padding-top: 20px;
+}
+
 .session-content {
   display: flex;
   justify-content: flex-end;
-}
-
-.lists-right {
-  list-style: none;
-  background-color: white;
-  margin: 30px 100px;
+  padding-right: 5%;
 }
