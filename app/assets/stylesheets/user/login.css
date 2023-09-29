@@ -1,0 +1,20 @@
+.session {
+background-color: bisque;
+
+}
+
+.session-title {
+  padding-top: 200px;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+}
