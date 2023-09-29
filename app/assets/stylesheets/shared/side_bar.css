@@ -1,7 +1,7 @@
 .side {
   float: right;
   width: 20%;
-  background-color: orange;
+  background-color: rgb(255, 251, 0);
   padding: 20px;
   height: 100vh;
 }

@@ -1,0 +1,14 @@
+.registration {
+  background-color: bisque;
+}
+
+
+
+.registration-title {
+  padding-top: 200px;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
