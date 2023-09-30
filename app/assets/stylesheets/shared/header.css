@@ -1,16 +1,35 @@
 .header {
-  background-color: #7fff7f;
-  padding: 10px;
-  height: 80px;
- 
+  background-image: url('header_top.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  padding: 5vh;
 }
 
+
 .header-title {
+  font-family: fantasy;
+  font-size: 50px;
   padding-top: 20px;
 }
 
 .session-content {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 5%;
+  justify-content: end;
+}
+
+.logout {
+  color: azure;
+  background-color: black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-style: outset;
+  border-radius: 16px;
+  padding: 2px;
+}
+
+.logout:hover {
+  color: yellow;
 }
