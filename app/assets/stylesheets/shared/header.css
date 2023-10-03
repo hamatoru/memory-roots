@@ -9,9 +9,11 @@
 
 
 .header-title {
+  color: black;
   font-family: fantasy;
   font-size: 50px;
   padding-top: 20px;
+  text-decoration: none;
 }
 
 .session-content {
@@ -21,11 +23,10 @@
 
 .logout {
   color: azure;
-  background-color: black;
+  background-color: gray;
   display: block;
   text-align: center;
   text-decoration: none;
-  border-style: outset;
   border-radius: 16px;
   padding: 2px;
 }

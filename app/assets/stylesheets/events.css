@@ -2,8 +2,68 @@
   float: left;
   width: 80%; /* メイン画面の幅を調整 */
   padding: 20px;
-  background-color: #f0f8ff;
+  background-color: whitesmoke;
   height: 100vh;
   overflow: scroll;
+}
+
+.group1 {
+  width: 100px;
+  height: 20px;
+  padding: 5px; /* テキスト内の余白 */
+  margin-left: 10px;
+}
+
+
+
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','ＭＳ ゴシック',sans-serif;
+}
+
+.tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tab-label {
+  color: White;
+  background: Gray;
+  border-style: outset;
+  margin-right: 5px;
+  padding: 3px 12px;
+  order: -1;
+}
+
+.tab-label:hover {
+  background-color: black;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+}
+/* アクティブなタブ */
+.tab-switch:checked+.tab-label {
+  background: DeepSkyBlue;
+  border-style: inset;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+  display: block;
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+  display: none;
+}
+
+
+.result {
+  margin-top: 20px;
+}
+
+.event-list {
+  margin-top: 10px;
 }
 

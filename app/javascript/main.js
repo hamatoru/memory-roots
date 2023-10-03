@@ -1,1 +1,1 @@
-console.log("Hello");
+window.addEventListener('turbo:load', main);1
