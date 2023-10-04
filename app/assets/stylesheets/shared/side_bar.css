@@ -6,6 +6,11 @@
   height: 100vh;
 }
 
-.main-side {
+.iframeWrap {
+  position: relative;
+  margin-top: 100%;
 }
 
+.iframeWrap iframe {
+  position: absolute;
+}
