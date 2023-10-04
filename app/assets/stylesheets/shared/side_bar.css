@@ -1,3 +1,4 @@
+/* サイドバーのCSS */
 .side {
   float: right;
   width: 20%;
@@ -6,9 +7,34 @@
   height: 100vh;
 }
 
+
+/* ログイン時のサイドバー表記 */
+.user-into {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+/* ログイン時のユーザー指定画像 */
+.user-image {
+  padding-top: 30px;
+}
+
+/* ログイン時のユーザーネーム表記 */
+.user-name {
+  padding-top: 20px;
+}
+
+
+
+
+
 .iframeWrap {
   position: relative;
-  margin-top: 100%;
+  margin-top: 70%;
 }
 
 .iframeWrap iframe {
