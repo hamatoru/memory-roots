@@ -9,7 +9,12 @@
 }
 
 .page-edit {
-  text-decoration: none;
   margin-top: 50px;
   margin-left: 20px;
+}
+
+.edit-link {
+  color: #7fbfff;
+  text-decoration: none;
+  border: solid 5px;
 }

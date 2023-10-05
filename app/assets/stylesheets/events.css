@@ -1,3 +1,5 @@
+
+
 .main {
   float: left;
   width: 80%; /* メイン画面の幅を調整 */
@@ -14,8 +16,10 @@
   margin-left: 10px;
 }
 
-
-
+.birthday-title {
+  margin-left: 30%;
+  font-size: 20px;
+}
 
 .title {
   text-align: center;
