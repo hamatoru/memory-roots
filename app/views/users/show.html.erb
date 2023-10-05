@@ -1,1 +1,10 @@
-a
+<%= render "shared/header" %>
+
+<div class="MyPage">
+<p class="page-title"><%= @nickname %>さんのマイページ</p>
+
+
+<p class="page-edit"><%= link_to 'マイページ編集', edit_user_path %></p>
+
+
+</div>

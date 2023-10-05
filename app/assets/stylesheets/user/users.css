@@ -1,0 +1,15 @@
+.MyPage {
+  display: flex;
+  justify-content: center;
+}
+
+.page-title {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.page-edit {
+  text-decoration: none;
+  margin-top: 50px;
+  margin-left: 20px;
+}

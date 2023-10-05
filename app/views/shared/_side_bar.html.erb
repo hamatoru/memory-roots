@@ -4,7 +4,7 @@
   <% if user_signed_in? %>
     <div class="user-into">
       <%= link_to 'ユーザー画像', root_path, class: "user-image" %>
-      <%= link_to 'ユーザー名', root_path, class: "user-name" %>
+      <%= link_to current_user.nickname, "/users/#{current_user.id}", class: "user-name" %>
     </div>
 
     <div class="iframeWrap">
