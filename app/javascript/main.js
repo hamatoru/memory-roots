@@ -61,7 +61,7 @@
 
     // 和暦の計算
     let japaneseYear = convertToJapaneseYear(eventDate.getFullYear());
-    let westernYear = "（西暦" + eventDate.getFullYear() + "年）";
+    let westernYear = "（" + eventDate.getFullYear() + "年）";
 
     // 行事名と和暦、西暦、月、日を結合して表示（空白を挿入）
     let eventText = event.name + ": " + japaneseYear + " " + westernYear + " " + (eventDate.getMonth() + 1) + " 月 " + eventDate.getDate() + " 日<br>";
