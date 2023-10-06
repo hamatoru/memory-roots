@@ -26,6 +26,21 @@
 
     // 年齢と行事の日付を計算し、表示を更新する関数
     function calculateAgeAndEvents() {
+
+      // トップページに戻るための関数
+function goToTopPage() {
+  // フォームの入力値をリセット
+  birthYearInput.value = "";
+  birthMonthInput.value = "";
+  birthDayInput.value = "";
+
+    // 結果をクリア
+    clearResults();
+
+     // ページをトップにスクロール
+  window.scrollTo(0, 0);
+}
+
     // 生年、生月、生日の入力値を取得
     let birthYear = parseInt(birthYearInput.value, 10);
     let birthMonth = parseInt(birthMonthInput.value, 10);
@@ -75,6 +90,14 @@
     resultElement.innerHTML = "年齢は " + age + " 歳です。";
     }
 
+    // 結果をクリアする関数
+function clearResults() {
+  let resultElement = document.getElementById("ageResult");
+  resultElement.innerHTML = "";
+
+  let eventsResultElement = document.getElementById("eventsResult");
+  eventsResultElement.innerHTML = "<h2>☆行事の日程☆</h2>";
+}
     // 正しい日付かどうかを確認する関数
     function isValidDate(year, month, day) {
       if (year < 1900 || year > new Date().getFullYear()) return false;
