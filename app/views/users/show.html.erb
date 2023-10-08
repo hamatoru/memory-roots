@@ -3,10 +3,15 @@
 <div class="MyPage">
 <p class="page-title"><%= @nickname %>さんのマイページ</p>
 
-
 <div class="page-edit">
-<%= link_to 'マイページ編集', edit_user_path, class: "edit-link" %>
+<%= link_to 'マイページ編集', edit_user_path(@user.id), class: "edit-link" %>
 </div>
 
+<% if @user.image.attached? %>
+  <%= image_tag @user.image %>
+<% else %>
+  <%= image_tag 'yellow_star.png' %>
+<% end %>
+  
 
 </div>

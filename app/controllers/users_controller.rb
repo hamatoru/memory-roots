@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!, except: [:index, :show, :edit, :update]
 
   def show
+    @user = User.find(params[:id])
     @nickname = current_user.nickname
+
   end
 
   def edit
@@ -10,7 +12,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    if current_user.update(user_params)
+    @user = current_user
+    if @user.update(user_params)
       redirect_to root_path
     else
       render :edit, status: :unprocessable_entity
@@ -20,7 +23,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:nickname, :email, :password)
+    params.require(:user).permit(:nickname, :email, :password, :image).marge(:event_id)
   end
-
 end

@@ -1,4 +1,6 @@
 
+  
+  
   function moveToNextField(currentField, nextField) {
     if (currentField.value.length === currentField.maxLength) {
       nextField.focus();

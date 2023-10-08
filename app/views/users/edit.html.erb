@@ -1,3 +1,24 @@
-<p>詳細ページだにゅ</p>
+<%= render "shared/header" %>
 
-<%= form_for(@user, url: user_path(@user), method: :patch, multipart: true) do |form| %>
+<%= form_with(model: @user, local: true) do |form| %>
+  <!-- 他のユーザー情報の編集フォーム -->
+
+   <div class="img-upload">
+      <div class="weight-bold-text">
+        商品画像
+      </div>
+      <div class="click-upload">
+        <p>クリックしてファイルをアップロード⇓</p>
+        <%= file_field :image, id:"item-image" %>
+        <div class="actions">
+        <%= form.submit "更新" %>
+        </div>
+      </div>
+    </div>
+  
+<% end %>
+<% if @user.image.attached? %>
+  <%= image_tag @user.image.variant(resize: "100x100") %>
+<% else %>
+  <%= image_tag 'yellow_star.png' %>
+<% end %>
