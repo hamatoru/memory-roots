@@ -1,73 +1,91 @@
-
-
 .main {
-  float: left;
-  width: 80%; /* メイン画面の幅を調整 */
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  background-color: whitesmoke;
-  height: 100vh;
-  overflow: scroll;
-}
-
-.group1 {
-  width: 100px;
-  height: 20px;
-  padding: 5px; /* テキスト内の余白 */
-  margin-left: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .birthday-title {
-  margin-left: 30%;
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.title {
+/* フォームとボタン */
+.group1 {
+  width: 100px;
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','ＭＳ ゴシック',sans-serif;
-}
-
-.tab-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-.tab-label {
-  color: White;
-  background: Gray;
-  border-style: outset;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
   margin-right: 5px;
-  padding: 3px 12px;
-  order: -1;
 }
 
-.tab-label:hover {
-  background-color: black;
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.tab-content {
-  width: 100%;
-  display: none;
+button:hover {
+  background-color: #0056b3;
 }
-/* アクティブなタブ */
-.tab-switch:checked+.tab-label {
-  background: DeepSkyBlue;
-  border-style: inset;
+
+/* タブスタイル */
+.tab-wrap {
+  margin-top: 20px;
 }
-.tab-switch:checked+.tab-label+.tab-content {
-  display: block;
-}
-/* ラジオボタン非表示 */
+
 .tab-switch {
   display: none;
 }
 
+.tab-label {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+}
 
+.tab-label:hover {
+  background-color: #0056b3;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+}
+
+.tab-switch:checked + .tab-label + .tab-content {
+  display: block;
+}
+
+/* 行事のリストスタイル */
 .result {
-  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .event-list {
-  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
+/* タイトル */
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}

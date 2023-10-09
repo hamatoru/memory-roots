@@ -1,0 +1,33 @@
+.main-edit {
+  display: flex;
+  flex-direction: column; /* 要素を縦に並べる */
+  align-items: center; /* 横方向の中央揃え */
+}
+
+.user-edit {
+  text-align: center; /* テキストを中央揃え */
+}
+
+.container {
+  text-align: left; /* フォーム内のテキストを左揃え */
+}
+
+.sample-image {
+  max-width: 100%; /* 画像の幅を最大に保つ */
+}
+
+.nicknameedit {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.update-btn {
+  text-align: center;
+}

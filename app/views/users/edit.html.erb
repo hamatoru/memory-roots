@@ -1,19 +1,19 @@
 <%= render "shared/header" %>
 
-<%= form_with(model: @user, local: true) do |form| %>
 
-   <div class="img-upload">
-      <div class="weight-bold-text">
-        商品画像
-      </div>
-      <div class="click-upload">
-        <p>クリックしてファイルをアップロード⇓</p>
-        <%= file_field :image, id:"item-image" %>
-        <div class="actions">
-        <%= form.submit "更新" %>
-        </div>
-      </div>
+<h2>編集ページ</h2>
+<div class="main-edit">
+<div class="user-edit">
+  <%= form_with(model: @user, local: true) do |form| %>
+    <div class="container">
+      <%= image_tag 'sample_image.jpg', class: "sample-image" %>
+      <%= file_field :image, id:"item-image" %>
+      <%= form.text_field :name, placeholder: "ニックネーム", class:"nicknameedit" %>
+      <%= form.text_area :text, placeholder: "例)よろしくお願いします", rows: "5" %>
+    <div class="update-btn">
+      <%= form.submit "更新" %>
     </div>
-  
-<% end %>
-<%= image_tag (@user.image_url), class: 'main-image' if @user.image.attached? %>
+    </div>
+  <% end %>
+</div>
+</div>
