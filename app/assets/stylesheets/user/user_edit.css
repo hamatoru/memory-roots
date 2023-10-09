@@ -1,33 +1,65 @@
 .main-edit {
-  display: flex;
-  flex-direction: column; /* 要素を縦に並べる */
-  align-items: center; /* 横方向の中央揃え */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .user-edit {
-  text-align: center; /* テキストを中央揃え */
-}
-
-.container {
-  text-align: left; /* フォーム内のテキストを左揃え */
+  text-align: center;
 }
 
 .sample-image {
-  max-width: 100%; /* 画像の幅を最大に保つ */
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.container {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .nicknameedit {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 textarea {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .update-btn {
-  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 更新ボタンのスタイル */
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2980b9;
 }
