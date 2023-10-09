@@ -1,6 +1,9 @@
 .MyPage {
+  position: relative;
+  height: 300px;
   display: flex;
   justify-content: center;
+  background-color: bisque;
 }
 
 .page-title {
@@ -17,4 +20,8 @@
   color: #7fbfff;
   text-decoration: none;
   border: solid 5px;
+}
+
+.page-show {
+po
 }

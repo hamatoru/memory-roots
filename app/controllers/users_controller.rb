@@ -23,6 +23,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:nickname, :email, :password, :image).marge(:event_id)
+    params.require(:user).permit(:nickname, :email, :password)
   end
 end

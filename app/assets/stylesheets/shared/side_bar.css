@@ -40,3 +40,22 @@
 .iframeWrap iframe {
   position: absolute;
 }
+
+/* 非ログイン時の情報 */
+.not-login {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.login {
+  text-decoration: none;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.sign-up {
+  text-decoration: none;
+  margin: auto;
+
+}

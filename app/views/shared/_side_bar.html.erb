@@ -16,9 +16,13 @@
 
   <%# 非ログイン時の表示 %>
   <% else %>
+  <div class="not-login">
+    <h3>ログインはコチラから⇓</h3>
     <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+    <h3>新規会員はコチラから⇓</h3>
     <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
   <% end %>
+  </div>
   </div>
 
 
