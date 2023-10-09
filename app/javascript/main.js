@@ -15,12 +15,16 @@
     // 行事の情報（複数の行事を配列で格納）
     let events = [
       { name: "お七夜", daysAfterBirth: 6 },
-      { name: "お宮参り", daysAfterBirth: 30 },
+      { name: "お宮参り(男の子)", daysAfterBirth: 30 },
+      { name: "お宮参り(女の子)", daysAfterBirth: 31 },
       { name: "お食い初め", daysAfterBirth: 99 },
       { name: "ハーフバースディ", daysAfterBirth: 182 },
-      { name: "初節句", daysAfterBirth: 186 },
+      { name: "初節句(女の子)", daysAfterBirth: 123 },
+      { name: "初節句(男の子)", daysAfterBirth: 186 },
       { name: "初誕生日", daysAfterBirth: 366 },
-      { name: "七五三(５歳)", daysAfterBirth: 1841 },
+      { name: "七五三(3歳)", daysAfterBirth: 1110 },
+      { name: "七五三(5歳)", daysAfterBirth: 1841 },
+      { name: "七五三(7歳)", daysAfterBirth: 2571 },
       { name: "小学校 入学", daysAfterBirth: 2343 },
       { name: "十三参り", daysAfterBirth: 4181 }
       // 他の行事を追加できます
