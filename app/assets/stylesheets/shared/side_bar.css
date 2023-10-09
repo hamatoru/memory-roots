@@ -19,20 +19,18 @@
 }
 
 /* ログイン時のユーザー指定画像 */
-.user-image {
-  padding-top: 30px;
+.sample-image {
+  height: 100px;
+  width: 100px;
+  margin-top: 30px;
 }
 
 /* ログイン時のユーザーネーム表記 */
 .user-name {
-  margin-top: 100px;
+  margin-top: 30px;
   text-decoration: none;
   border-radius: 16px;
 }
-
-
-
-
 
 .iframeWrap {
   position: relative;

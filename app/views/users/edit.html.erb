@@ -1,7 +1,6 @@
 <%= render "shared/header" %>
 
 <%= form_with(model: @user, local: true) do |form| %>
-  <!-- 他のユーザー情報の編集フォーム -->
 
    <div class="img-upload">
       <div class="weight-bold-text">
@@ -17,8 +16,4 @@
     </div>
   
 <% end %>
-<% if @user.image.attached? %>
-  <%= image_tag @user.image.variant(resize: "100x100") %>
-<% else %>
-  <%= image_tag 'yellow_star.png' %>
-<% end %>
+<%= image_tag (@user.image_url), class: 'main-image' if @user.image.attached? %>

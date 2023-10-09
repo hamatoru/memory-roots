@@ -3,11 +3,8 @@
 <div class="main-side">
   <% if user_signed_in? %>
     <div class="user-into">
-      <% if @user.image.attached? %>
-        <%= image_tag @user.image %>
-      <% else %>
-        <%= image_tag 'yellow_star.png' %>
-      <% end %>
+
+      <%= image_tag 'sample_image.jpg', class: "sample-image" %>
 
       <%= link_to current_user.nickname, user_path(@user.id), class: "user-name" %>
     </div>

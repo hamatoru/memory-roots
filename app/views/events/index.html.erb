@@ -4,7 +4,7 @@
 <div class="main">
 
 <div class="birthday-title">
-  <h2>生年月日を入力してください(半角)⇓</h2>
+  <h3>生年月日を入力しましょう！(半角)⇓</h3>
     <label for="birthYear"></label>西暦
     <input type="text" class="group1" id="birthYear" placeholder="YYYY" maxlength="4" oninput="moveToNextField(this, document.getElementById('birthMonth'))">年
     <label for="birthMonth"></label>
@@ -26,7 +26,7 @@
       <li class="event-list">お宮参り</li>
       <li class="event-list">お食い初め</li>
       <li class="event-list">ハーフバースディ</li>
-      <li class="event-list">初節句</li>
+      <li class="event-list">初節句(男の子)</li>
       <li class="event-list">初誕生日</li>
       <li class="event-list">七五三(５歳)</li>
       <li class="event-list">小学校 入学</li>
@@ -34,14 +34,26 @@
     </div>
   </div>
 
-  <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">２年目以降</label>
+  <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">大人になってからの行事</label>
     <div class="tab-content">
+    <div class="result" id="eventsResult-02">ここに行事の結果が表示されます。
       <li class="event-list">成人式</li>
+      <li class="event-list">還暦</li>
+      <li class="event-list">古稀</li>
+      <li class="event-list">喜寿</li>
+      <li class="event-list">傘寿</li>
+      <li class="event-list">米寿</li>
+      <li class="event-list">卒寿</li>
+      <li class="event-list">白寿</li>
+      <li class="event-list">百寿</li>
+      <li class="event-list">茶寿</li>
+      <li class="event-list">皇寿</li>
+      <li class="event-list">大還暦</li>
     </div>
-
-  <input id="TAB-03" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-03">その他</label>
+  </div>
+  <input id="TAB-03" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-03">その他の行事</label>
     <div class="tab-content">
-      そこも
+      <li class="event-list">結婚記念日</li>
     </div>
 </div>
 
