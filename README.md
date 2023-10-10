@@ -55,3 +55,5 @@
 
 - belongs_to :photo
 
+[![Image from Gyazo](https://i.gyazo.com/0a8df933e17d939cac38da515a5e7b92.gif)](https://gyazo.com/0a8df933e17d939cac38da515a5e7b92)
+
