@@ -54,3 +54,4 @@
 ### Association
 
 - belongs_to :photo
+
