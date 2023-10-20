@@ -9,8 +9,8 @@
     <div class="container">
       <%= image_tag 'sample_image.jpg', class: "sample-image" %>
       <%= file_field :image, id:"item-image" %>
-      <%= form.text_field :name, placeholder: "ニックネーム", class:"nicknameedit" %>
-      <%= form.text_area :text, placeholder: "例)よろしくお願いします", rows: "5" %>
+      <%= form.text_field :name, placeholder: @user.nickname, class:"nicknameedit" %>
+      <%= form.text_area :text, placeholder: @user.profile, rows: "5" %>
     <div class="update-btn">
       <%= form.submit "更新" %>
     </div>
