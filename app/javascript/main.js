@@ -30,6 +30,14 @@
       // 他の行事を追加できます
     ];
 
+    // 新しい行事の情報（複数の行事を配列で格納）
+let newEvents = [
+  { name: "新しい行事1", daysAfterBirth: 123 },
+  { name: "新しい行事2", daysAfterBirth: 456 },
+  // 他の新しい行事を追加できます
+];
+
+
     // 年齢と行事の日付を計算し、表示を更新する関数
     function calculateAgeAndEvents() {
 
@@ -104,6 +112,44 @@ function clearResults() {
   let eventsResultElement = document.getElementById("eventsResult");
   eventsResultElement.innerHTML = "<h2>☆行事の日程☆</h2>";
 }
+
+// タブが切り替わったときに呼び出す関数
+function handleTabSwitch(event) {
+  let selectedTabId = event.target.id;
+
+  if (selectedTabId === "TAB-02") {
+    calculateEventsForTab02();
+  } else {
+    clearEventsForTab02();
+  }
+  // 他のタブについても同様に処理を追加
+}
+
+// TAB-02用の行事計算処理
+function calculateEventsForTab02() {
+  // 新しい行事の計算処理を行います
+  let eventsResultElement = document.getElementById("eventsResult-02");
+  eventsResultElement.innerHTML = "<h2>☆新しい行事の日程☆</h2>";
+
+  for (let i = 0; i < newEvents.length; i++) {
+    let event = newEvents[i];
+    let eventDate = new Date(birthYear, birthMonth - 1, birthDay + event.daysAfterBirth);
+
+    let japaneseYear = convertToJapaneseYear(eventDate.getFullYear());
+    let westernYear = "（" + eventDate.getFullYear() + "年）";
+
+    let eventText = event.name + ": " + japaneseYear + " " + westernYear + " " + (eventDate.getMonth() + 1) + " 月 " + eventDate.getDate() + " 日<br>";
+
+    eventsResultElement.innerHTML += eventText;
+  }
+}
+
+// TAB-02の行事をクリアする関数
+function clearEventsForTab02() {
+  let eventsResultElement = document.getElementById("eventsResult-02");
+  eventsResultElement.innerHTML = "<h2>☆新しい行事の日程☆</h2>";
+}
+
     // 正しい日付かどうかを確認する関数
     function isValidDate(year, month, day) {
       if (year < 1900 || year > new Date().getFullYear()) return false;
